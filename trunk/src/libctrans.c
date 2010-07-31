@@ -154,7 +154,7 @@ ctrans_raise_exception(Transaction* pTrans, exception_base* exception)
       }
     // TODO(1): Log exception history?
     ctrans_restore_Stack(pTrans);
-    pTrans->reisedException = (exception_base*)exception;
+    pTrans->raisedException = (exception_base*)exception;
     longjmp(pTrans->transStart,EXCEPTION_CAPTURED);
 }
 
