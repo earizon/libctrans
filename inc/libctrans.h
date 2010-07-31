@@ -190,7 +190,7 @@
 #include <glib-2.0/glib.h>
 
 #ifndef __CTRANSACTIONS__
-    #define __CTRANSACTIONS__
+#define __CTRANSACTIONS__
 
 
 /**
@@ -283,7 +283,7 @@ struct _Transaction {
  // GList*   allocated_threads  ;  ?  // TODO(1)
  // GList*   allocated_timers   ;  ?  // TODO(1)
  // GList*   allocated_listeners;  ?  // TODO(1)
-    exception_base* reisedException;
+    exception_base* raisedException;
 };
 
 typedef struct _Transaction Transaction;
